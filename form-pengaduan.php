@@ -197,7 +197,7 @@
         <h1><span>💌</span> Form Pengaduan</h1>
         <p style="color: #888; margin-bottom: 20px; font-size: 0.9rem;">Jangan khawatir, kami siap mendengarkan!</p>
         
-        <form id="complaintForm" onsubmit="handleForm(event)">
+        <form id="complaintForm" action="proses-pengaduan.php" method="post">
             
             <!-- KATEGORI BARU -->
             <div class="form-group">
@@ -231,17 +231,17 @@
 
             <div class="form-group">
                 <label class="lbl-text" for="nis">🆔 NIS Kamu</label>
-                <input type="text" id="nis" placeholder="Masukkan NIS..." required>
+                <input type="text" id="nis" name="nis" placeholder="Masukkan NIS..." required>
             </div>
 
             <div class="form-group">
                 <label class="lbl-text" for="lokasi">📍 Lokasi Kejadian</label>
-                <input type="text" id="lokasi" placeholder="Di mana ini terjadi?" required>
+                <input type="text" id="lokasi" name="lokasi" placeholder="Di mana ini terjadi?" required>
             </div>
 
             <div class="form-group">
                 <label class="lbl-text" for="keterangan">💬 Ceritakan Detailnya</label>
-                <textarea id="keterangan" placeholder="Apa yang terjadi? Cerita lengkapnya ya..." required></textarea>
+                <textarea id="keterangan" name="keterangan" placeholder="Apa yang terjadi? Cerita lengkapnya ya..." required></textarea>
             </div>
 
             <button type="submit">Kirim Sekarang 🚀</button>
